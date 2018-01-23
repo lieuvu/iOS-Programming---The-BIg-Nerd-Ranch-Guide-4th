@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="Stack View standard spacing" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="BNRDrawingColorViewController">
+            <connections>
+                <outlet property="view" destination="iN0-l3-epB" id="tFU-Od-7zd"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="Exp-Qs-QOU">
+                    <rect key="frame" x="9.5" y="313.5" width="356" height="333.5"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="VmA-BI-6lU">
+                            <rect key="frame" x="12.5" y="0.0" width="331.5" height="77.5"/>
+                            <subviews>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QGU-JJ-AVf" customClass="UIControl">
+                                    <rect key="frame" x="0.0" y="0.0" width="76.5" height="77.5"/>
+                                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" secondItem="QGU-JJ-AVf" secondAttribute="height" id="SpG-WQ-VwD"/>
+                                    </constraints>
+                                    <connections>
+                                        <action selector="selectColor:" destination="-1" eventType="touchUpInside" id="AHI-iE-psU"/>
+                                    </connections>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MvQ-HI-utC" customClass="UIControl">
+                                    <rect key="frame" x="84.5" y="0.5" width="77" height="76.5"/>
+                                    <color key="backgroundColor" red="0.99942404029999998" green="0.98555368190000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" secondItem="MvQ-HI-utC" secondAttribute="height" id="1Jc-aV-E6I"/>
+                                    </constraints>
+                                    <connections>
+                                        <action selector="selectColor:" destination="-1" eventType="touchUpInside" id="koh-iG-Wfg"/>
+                                    </connections>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OTd-ts-i7T" customClass="UIControl">
+                                    <rect key="frame" x="169.5" y="0.5" width="77" height="76.5"/>
+                                    <color key="backgroundColor" red="0.0" green="0.99143940210000003" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" secondItem="OTd-ts-i7T" secondAttribute="height" id="7U2-df-euR"/>
+                                    </constraints>
+                                    <connections>
+                                        <action selector="selectColor:" destination="-1" eventType="touchUpInside" id="4Xs-v8-Adp"/>
+                                    </connections>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kG6-PI-ExX" customClass="UIControl">
+                                    <rect key="frame" x="254.5" y="0.5" width="77" height="76.5"/>
+                                    <color key="backgroundColor" red="0.83216959239999999" green="0.98548370600000001" blue="0.47333085539999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" secondItem="kG6-PI-ExX" secondAttribute="height" id="pjb-AG-GvC"/>
+                                    </constraints>
+                                    <connections>
+                                        <action selector="selectColor:" destination="-1" eventType="touchUpInside" id="0qN-ZY-Rs4"/>
+                                    </connections>
+                                </view>
+                            </subviews>
+                            <color key="backgroundColor" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
+                        </stackView>
+                        <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="Qb8-XX-lJU">
+                            <rect key="frame" x="12.5" y="85.5" width="331.5" height="77.5"/>
+                            <subviews>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vWq-TX-C9x" customClass="UIControl">
+                                    <rect key="frame" x="0.0" y="0.0" width="76.5" height="77.5"/>
+                                    <color key="backgroundColor" red="0.58105844259999995" green="0.12855249639999999" blue="0.57453137639999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" secondItem="vWq-TX-C9x" secondAttribute="height" id="Czt-zv-jNQ"/>
+                                    </constraints>
+                                    <connections>
+                                        <action selector="selectColor:" destination="-1" eventType="touchUpInside" id="2Vf-lh-COQ"/>
+                                    </connections>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Zo8-e8-irO" customClass="UIControl">
+                                    <rect key="frame" x="84.5" y="0.0" width="77" height="77"/>
+                                    <color key="backgroundColor" red="0.0" green="0.58980089430000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" secondItem="Zo8-e8-irO" secondAttribute="height" id="nr7-GI-tN3"/>
+                                    </constraints>
+                                    <connections>
+                                        <action selector="selectColor:" destination="-1" eventType="touchUpInside" id="KA1-6U-IhJ"/>
+                                    </connections>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="X7C-Iu-jn4" customClass="UIControl">
+                                    <rect key="frame" x="169.5" y="0.0" width="77" height="77"/>
+                                    <color key="backgroundColor" red="1" green="0.49327188729999999" blue="0.47399842739999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" secondItem="X7C-Iu-jn4" secondAttribute="height" id="0dD-dN-sAK"/>
+                                    </constraints>
+                                    <connections>
+                                        <action selector="selectColor:" destination="-1" eventType="touchUpInside" id="NQh-En-jqh"/>
+                                    </connections>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EHT-Vh-GZk" customClass="UIControl">
+                                    <rect key="frame" x="254.5" y="0.0" width="77" height="77"/>
+                                    <color key="backgroundColor" red="0.37055522200000002" green="0.37056469920000001" blue="0.37055957319999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" secondItem="EHT-Vh-GZk" secondAttribute="height" id="tPp-VP-Jz1"/>
+                                    </constraints>
+                                    <connections>
+                                        <action selector="selectColor:" destination="-1" eventType="touchUpInside" id="KXs-Zh-5bq"/>
+                                    </connections>
+                                </view>
+                            </subviews>
+                        </stackView>
+                        <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="XUr-VD-bOO">
+                            <rect key="frame" x="11.5" y="171" width="333.5" height="77"/>
+                            <subviews>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zdW-GM-he7" customClass="UIControl">
+                                    <rect key="frame" x="0.0" y="0.0" width="77" height="77"/>
+                                    <color key="backgroundColor" red="1" green="0.83234566450000003" blue="0.47320586440000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" secondItem="zdW-GM-he7" secondAttribute="height" id="xHc-lK-aHl"/>
+                                    </constraints>
+                                    <connections>
+                                        <action selector="selectColor:" destination="-1" eventType="touchUpInside" id="zXQ-2S-CdB"/>
+                                    </connections>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cOK-Cs-Ccx" customClass="UIControl">
+                                    <rect key="frame" x="85" y="0.0" width="77.5" height="77"/>
+                                    <color key="backgroundColor" red="1" green="0.5409764051" blue="0.84731429820000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" secondItem="cOK-Cs-Ccx" secondAttribute="height" id="FKn-a3-aQu"/>
+                                    </constraints>
+                                    <connections>
+                                        <action selector="selectColor:" destination="-1" eventType="touchUpInside" id="Y54-L9-MJ2"/>
+                                    </connections>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FYG-J9-BaT" customClass="UIControl">
+                                    <rect key="frame" x="170.5" y="0.0" width="77.5" height="77"/>
+                                    <color key="backgroundColor" red="0.0" green="0.56904578210000001" blue="0.57461684940000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" secondItem="FYG-J9-BaT" secondAttribute="height" id="WiL-fF-8Ee"/>
+                                    </constraints>
+                                    <connections>
+                                        <action selector="selectColor:" destination="-1" eventType="touchUpInside" id="6Kr-b9-Wbd"/>
+                                    </connections>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QGC-Au-SN3" customClass="UIControl">
+                                    <rect key="frame" x="256" y="0.0" width="77.5" height="77"/>
+                                    <color key="backgroundColor" red="1" green="0.1857388616" blue="0.57339501380000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" secondItem="QGC-Au-SN3" secondAttribute="height" id="rg4-8m-HMz"/>
+                                    </constraints>
+                                    <connections>
+                                        <action selector="selectColor:" destination="-1" eventType="touchUpInside" id="C7w-4s-r8V"/>
+                                    </connections>
+                                </view>
+                            </subviews>
+                        </stackView>
+                        <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="1Mq-w5-ddW">
+                            <rect key="frame" x="12.5" y="256" width="331.5" height="77.5"/>
+                            <subviews>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="scJ-Lh-miP" customClass="UIControl">
+                                    <rect key="frame" x="0.0" y="0.0" width="76.5" height="77.5"/>
+                                    <color key="backgroundColor" red="1" green="0.49327188729999999" blue="0.47399842739999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" secondItem="scJ-Lh-miP" secondAttribute="height" id="uzr-FO-VIj"/>
+                                    </constraints>
+                                    <connections>
+                                        <action selector="selectColor:" destination="-1" eventType="touchUpInside" id="ZRc-oX-RDm"/>
+                                    </connections>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Axr-Zs-rmp" customClass="UIControl">
+                                    <rect key="frame" x="84.5" y="0.5" width="77" height="77"/>
+                                    <color key="backgroundColor" red="0.0048598507420000003" green="0.096086271109999996" blue="0.57499289509999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" secondItem="Axr-Zs-rmp" secondAttribute="height" id="nFL-JG-hTb"/>
+                                    </constraints>
+                                    <connections>
+                                        <action selector="selectColor:" destination="-1" eventType="touchUpInside" id="vt1-vI-THH"/>
+                                    </connections>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mjY-Mf-6qD" customClass="UIControl">
+                                    <rect key="frame" x="169.5" y="0.5" width="77" height="77"/>
+                                    <color key="backgroundColor" red="0.45009386540000001" green="0.98132258650000004" blue="0.4743030667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" secondItem="mjY-Mf-6qD" secondAttribute="height" id="iBv-i5-XGf"/>
+                                    </constraints>
+                                    <connections>
+                                        <action selector="selectColor:" destination="-1" eventType="touchUpInside" id="g9D-nY-BPF"/>
+                                    </connections>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MUv-Dc-Gul" customClass="UIControl">
+                                    <rect key="frame" x="254.5" y="0.5" width="77" height="77"/>
+                                    <color key="backgroundColor" red="1" green="0.52120530610000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" secondItem="MUv-Dc-Gul" secondAttribute="height" id="kpa-od-dyj"/>
+                                    </constraints>
+                                    <connections>
+                                        <action selector="selectColor:" destination="-1" eventType="touchUpInside" id="Grg-9P-nZ6"/>
+                                    </connections>
+                                </view>
+                            </subviews>
+                        </stackView>
+                    </subviews>
+                </stackView>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="Exp-Qs-QOU" firstAttribute="height" secondItem="iN0-l3-epB" secondAttribute="height" multiplier="0.5" id="47s-Dq-SaM"/>
+                <constraint firstItem="Exp-Qs-QOU" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="90k-Ak-DTZ"/>
+                <constraint firstItem="Exp-Qs-QOU" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" multiplier="0.95" id="EhC-Dv-KYA"/>
+                <constraint firstAttribute="bottom" secondItem="Exp-Qs-QOU" secondAttribute="bottom" constant="20" symbolic="YES" id="EiY-hm-ojh"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="32.5" y="68.5"/>
+        </view>
+    </objects>
+</document>

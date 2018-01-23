@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="BNRDateViewController">
+            <connections>
+                <outlet property="datePicker" destination="eCZ-g8-Mdd" id="CON-CP-JrE"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outletCollection property="constraintsOfSafeArea" destination="EU3-E3-W55" id="hR7-7D-Wmi"/>
+                <outletCollection property="constraintsOfSafeArea" destination="UHd-GS-cVP" id="GGh-9F-74x"/>
+                <outletCollection property="constraintsOfSafeArea" destination="OMF-n9-SqU" id="Wwk-Nu-X1X"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="eCZ-g8-Mdd">
+                    <rect key="frame" x="0.0" y="96" width="375" height="216"/>
+                    <date key="date" timeIntervalSinceReferenceDate="533739870.12166601">
+                        <!--2017-11-30 13:04:30 +0000-->
+                    </date>
+                </datePicker>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="eCZ-g8-Mdd" firstAttribute="top" secondItem="Q5M-cg-NOt" secondAttribute="top" constant="32" id="EU3-E3-W55"/>
+                <constraint firstItem="eCZ-g8-Mdd" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" id="OMF-n9-SqU"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="eCZ-g8-Mdd" secondAttribute="trailing" id="UHd-GS-cVP"/>
+            </constraints>
+            <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+            <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
+        </view>
+    </objects>
+</document>

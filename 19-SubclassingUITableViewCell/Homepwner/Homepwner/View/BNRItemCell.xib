@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="xaW-wp-M1y" customClass="BNRItemCell">
+            <rect key="frame" x="0.0" y="0.0" width="430" height="48"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="xaW-wp-M1y" id="WfY-ev-df0">
+                <rect key="frame" x="0.0" y="0.0" width="430" height="47.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q4D-Pu-zd2">
+                        <rect key="frame" x="50" y="1" width="310" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="u9R-aa-0Od"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="72e-Gs-gjx">
+                        <rect key="frame" x="50" y="31.5" width="310" height="15"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="15" id="t8c-HB-WzA"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="eeA-Rf-aAt">
+                        <rect key="frame" x="2" y="4" width="40" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="40" id="IWO-43-gDt"/>
+                            <constraint firstAttribute="width" secondItem="eeA-Rf-aAt" secondAttribute="height" id="xw0-f7-CiP"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="1000" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nai-8u-ekp">
+                        <rect key="frame" x="368" y="13.5" width="42" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PkC-On-4TI">
+                        <rect key="frame" x="2" y="4" width="40" height="40"/>
+                        <connections>
+                            <action selector="showImage:" destination="xaW-wp-M1y" eventType="touchUpInside" id="eR6-E7-Nng"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="72e-Gs-gjx" firstAttribute="leading" secondItem="eeA-Rf-aAt" secondAttribute="trailing" constant="8" id="2et-VY-nYs"/>
+                    <constraint firstItem="PkC-On-4TI" firstAttribute="leading" secondItem="eeA-Rf-aAt" secondAttribute="leading" id="AAg-xo-p1C"/>
+                    <constraint firstItem="PkC-On-4TI" firstAttribute="top" secondItem="eeA-Rf-aAt" secondAttribute="top" id="CG6-eE-BgG"/>
+                    <constraint firstItem="PkC-On-4TI" firstAttribute="bottom" secondItem="eeA-Rf-aAt" secondAttribute="bottom" id="Evv-sP-HBO"/>
+                    <constraint firstItem="q4D-Pu-zd2" firstAttribute="leading" secondItem="eeA-Rf-aAt" secondAttribute="trailing" constant="8" id="FEC-Te-C6J"/>
+                    <constraint firstAttribute="bottom" secondItem="72e-Gs-gjx" secondAttribute="bottom" constant="1" id="Ksw-Zz-x78"/>
+                    <constraint firstItem="PkC-On-4TI" firstAttribute="trailing" secondItem="eeA-Rf-aAt" secondAttribute="trailing" id="XP2-hP-bAr"/>
+                    <constraint firstItem="nai-8u-ekp" firstAttribute="leading" secondItem="q4D-Pu-zd2" secondAttribute="trailing" constant="8" id="XT0-qa-RXT"/>
+                    <constraint firstItem="q4D-Pu-zd2" firstAttribute="trailing" secondItem="72e-Gs-gjx" secondAttribute="trailing" id="aFw-s5-ppQ"/>
+                    <constraint firstItem="eeA-Rf-aAt" firstAttribute="leading" secondItem="WfY-ev-df0" secondAttribute="leading" constant="2" id="fVR-y1-zel"/>
+                    <constraint firstItem="nai-8u-ekp" firstAttribute="leading" secondItem="72e-Gs-gjx" secondAttribute="trailing" constant="8" id="jwu-8K-oy7"/>
+                    <constraint firstItem="72e-Gs-gjx" firstAttribute="top" relation="greaterThanOrEqual" secondItem="q4D-Pu-zd2" secondAttribute="bottom" constant="5" id="lrZ-Qb-epj"/>
+                    <constraint firstItem="eeA-Rf-aAt" firstAttribute="centerY" secondItem="WfY-ev-df0" secondAttribute="centerY" id="vz2-0v-gY7"/>
+                    <constraint firstAttribute="trailing" secondItem="nai-8u-ekp" secondAttribute="trailing" constant="20" id="xGG-wl-H2y"/>
+                    <constraint firstItem="q4D-Pu-zd2" firstAttribute="top" secondItem="WfY-ev-df0" secondAttribute="top" constant="1" id="yJF-mR-rEs"/>
+                    <constraint firstItem="nai-8u-ekp" firstAttribute="centerY" secondItem="WfY-ev-df0" secondAttribute="centerY" id="zLR-TV-HuQ"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="nameLabel" destination="q4D-Pu-zd2" id="pus-aY-5Uz"/>
+                <outlet property="serialNumberLabel" destination="72e-Gs-gjx" id="Xz8-ci-Cdv"/>
+                <outlet property="thumnailView" destination="eeA-Rf-aAt" id="yiy-MC-1tC"/>
+                <outlet property="valueLabel" destination="nai-8u-ekp" id="DYe-G6-EG2"/>
+            </connections>
+            <point key="canvasLocation" x="-199" y="-80"/>
+        </tableViewCell>
+    </objects>
+</document>

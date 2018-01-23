@@ -1,0 +1,32 @@
+//
+//  BNRItem.h
+//  RandomItems
+//
+//  Created by Lieu Vu on 11/20/17.
+//  Copyright © 2017 Big Nerd Ranch. All rights reserved.
+//
+
+#import <Foundation/Foundation.h>
+
+@interface BNRItem : NSObject
+
+@property (strong, nonatomic) BNRItem *containedItem;
+@property (weak, nonatomic) BNRItem *container;
+
+@property (copy, nonatomic) NSString *itemName;
+@property (copy, nonatomic) NSString *serialNumber;
+@property (nonatomic) int valueInDollars;
+@property (strong, readonly, nonatomic) NSDate *dateCreated;
+
++ (instancetype)randomItem;
+
+// Designated initializer for BNRItem
+- (instancetype)initWithItemName:(NSString *)name
+                   valueInDollar:(int)value
+                    serialNumber:(NSString *)sNumber;
+
+- (instancetype)initWithItemName:(NSString *)name;
+
+- (instancetype)initWithItemName:(NSString *)name serialNumber:(NSString *)sNumber;
+
+@end

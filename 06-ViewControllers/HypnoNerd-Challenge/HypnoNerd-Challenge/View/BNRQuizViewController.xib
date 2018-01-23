@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="BNRQuizViewController">
+            <connections>
+                <outlet property="answerLabel" destination="Msz-cW-71I" id="zZy-bI-3aQ"/>
+                <outlet property="questionLabel" destination="ByH-mX-2VL" id="bsd-T9-4D6"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="???" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Msz-cW-71I">
+                    <rect key="frame" x="191.66666666666666" y="306" width="31" height="24"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RDX-nR-ael">
+                    <rect key="frame" x="140.66666666666666" y="120" width="132.99999999999997" height="36"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                    <state key="normal" title="Show Question"/>
+                    <connections>
+                        <action selector="showQuestion:" destination="-1" eventType="touchUpInside" id="T6Y-xm-Pu1"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="252" verticalCompressionResistancePriority="751" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AEj-Kl-B9L">
+                    <rect key="frame" x="147.66666666666666" y="338" width="118.99999999999997" height="36"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                    <state key="normal" title="Show Answer"/>
+                    <connections>
+                        <action selector="showAnswer:" destination="-1" eventType="touchUpInside" id="5Je-vH-ghT"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ByH-mX-2VL">
+                    <rect key="frame" x="207" y="112" width="0.0" height="0.0"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="ByH-mX-2VL" firstAttribute="centerX" secondItem="HDg-qH-yvY" secondAttribute="centerX" id="EmN-Iq-GXJ"/>
+                <constraint firstItem="AEj-Kl-B9L" firstAttribute="centerX" secondItem="HDg-qH-yvY" secondAttribute="centerX" id="Rza-VN-pCi"/>
+                <constraint firstItem="RDX-nR-ael" firstAttribute="centerX" secondItem="HDg-qH-yvY" secondAttribute="centerX" id="VKU-Yb-DYk"/>
+                <constraint firstItem="Msz-cW-71I" firstAttribute="top" relation="lessThanOrEqual" secondItem="RDX-nR-ael" secondAttribute="bottom" constant="150" id="Ynz-LO-ghE"/>
+                <constraint firstItem="RDX-nR-ael" firstAttribute="top" secondItem="ByH-mX-2VL" secondAttribute="bottom" constant="8" symbolic="YES" id="bET-Uz-bEw"/>
+                <constraint firstItem="RDX-nR-ael" firstAttribute="top" secondItem="HDg-qH-yvY" secondAttribute="top" priority="998" constant="100" id="dzz-do-RnP">
+                    <variation key="heightClass=compact-widthClass=regular" constant="70"/>
+                </constraint>
+                <constraint firstItem="AEj-Kl-B9L" firstAttribute="top" secondItem="Msz-cW-71I" secondAttribute="bottom" constant="8" symbolic="YES" id="mlB-Mn-hPd"/>
+                <constraint firstItem="Msz-cW-71I" firstAttribute="top" secondItem="RDX-nR-ael" secondAttribute="bottom" priority="999" constant="150" id="oKJ-9w-71J"/>
+                <constraint firstItem="Msz-cW-71I" firstAttribute="centerX" secondItem="HDg-qH-yvY" secondAttribute="centerX" id="rKk-do-1ml"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="HDg-qH-yvY"/>
+            <point key="canvasLocation" x="25" y="52"/>
+        </view>
+    </objects>
+</document>

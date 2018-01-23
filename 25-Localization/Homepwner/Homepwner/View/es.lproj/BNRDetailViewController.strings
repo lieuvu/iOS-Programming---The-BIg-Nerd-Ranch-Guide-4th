@@ -1,0 +1,15 @@
+
+/* Class = "UILabel"; text = "Name"; ObjectID = "1HK-62-oN0"; */
+"1HK-62-oN0.text" = "Nombre";
+
+/* Class = "UILabel"; text = "Serial"; ObjectID = "Eu0-LB-DY6"; */
+"Eu0-LB-DY6.text" = "Numéro de serie";
+
+/* Class = "UILabel"; text = "Value"; ObjectID = "HI3-b8-tXP"; */
+"HI3-b8-tXP.text" = "Valor";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "aTv-uU-c9T"; */
+"aTv-uU-c9T.text" = "Label";
+
+/* Class = "UIBarButtonItem"; title = "Item"; ObjectID = "i0o-OX-p9u"; */
+"i0o-OX-p9u.title" = "Item";

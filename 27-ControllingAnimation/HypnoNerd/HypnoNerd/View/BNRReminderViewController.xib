@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="BNRReminderViewController">
+            <connections>
+                <outlet property="datePicker" destination="eLV-1f-Wi9" id="M07-83-UOS"/>
+                <outlet property="view" destination="r88-n3-L87" id="YIU-Ij-UzA"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="r88-n3-L87">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="eLV-1f-Wi9">
+                    <rect key="frame" x="47" y="70" width="320" height="216"/>
+                    <date key="date" timeIntervalSinceReferenceDate="533151055.93612999">
+                        <!--2017-11-23 17:30:55 +0000-->
+                    </date>
+                </datePicker>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="55R-zb-TRK">
+                    <rect key="frame" x="150" y="336" width="114" height="39"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                    <state key="normal" title="Remind me!"/>
+                    <connections>
+                        <action selector="addReminder:" destination="-1" eventType="touchUpInside" id="hht-nV-cgd"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <color key="tintColor" red="0.20000000000000001" green="0.40000000000000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="eLV-1f-Wi9" firstAttribute="centerX" secondItem="M23-n8-PMd" secondAttribute="centerX" id="MmZ-ch-uhK"/>
+                <constraint firstItem="55R-zb-TRK" firstAttribute="centerX" secondItem="M23-n8-PMd" secondAttribute="centerX" id="Soz-sh-uie"/>
+                <constraint firstItem="55R-zb-TRK" firstAttribute="top" secondItem="eLV-1f-Wi9" secondAttribute="bottom" priority="999" constant="50" id="q15-Wj-4Ra"/>
+                <constraint firstItem="eLV-1f-Wi9" firstAttribute="top" secondItem="M23-n8-PMd" secondAttribute="top" constant="50" id="sse-jK-Jtk"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="M23-n8-PMd"/>
+            <point key="canvasLocation" x="101" y="149"/>
+        </view>
+    </objects>
+</document>

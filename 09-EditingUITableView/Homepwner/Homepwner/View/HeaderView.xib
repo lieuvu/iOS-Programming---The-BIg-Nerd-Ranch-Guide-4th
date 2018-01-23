@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="BNRItemsViewController">
+            <connections>
+                <outlet property="headerView" destination="bV9-RD-dUZ" id="Qki-El-pjd"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="bV9-RD-dUZ">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="64"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vR4-6F-j6N">
+                    <rect key="frame" x="16" y="16" width="34" height="32"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="32" id="MZb-rN-udR"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                    <state key="normal" title="Edit"/>
+                    <connections>
+                        <action selector="toogleEditingMode:" destination="-1" eventType="touchUpInside" id="Eyh-UV-JUO"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uxM-q9-BaJ">
+                    <rect key="frame" x="319" y="16" width="40" height="32"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="32" id="j8y-Yd-KtX"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                    <state key="normal" title="New"/>
+                    <connections>
+                        <action selector="addNewItem:" destination="-1" eventType="touchUpInside" id="D6R-An-Oy0"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="vR4-6F-j6N" secondAttribute="bottom" constant="16" id="0ae-83-QIY"/>
+                <constraint firstAttribute="trailing" secondItem="uxM-q9-BaJ" secondAttribute="trailing" constant="16" id="62H-mf-TZl"/>
+                <constraint firstItem="vR4-6F-j6N" firstAttribute="leading" secondItem="bV9-RD-dUZ" secondAttribute="leading" constant="16" id="CTn-X8-z4N"/>
+                <constraint firstItem="uxM-q9-BaJ" firstAttribute="top" secondItem="bV9-RD-dUZ" secondAttribute="top" constant="16" id="SHt-gy-777"/>
+                <constraint firstAttribute="bottom" secondItem="uxM-q9-BaJ" secondAttribute="bottom" constant="16" id="U3a-9w-xel"/>
+                <constraint firstItem="vR4-6F-j6N" firstAttribute="top" secondItem="bV9-RD-dUZ" secondAttribute="top" constant="16" id="x0B-ZZ-GXK"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="9" y="-284"/>
+        </view>
+    </objects>
+</document>
